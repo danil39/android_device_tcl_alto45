@@ -1,0 +1,11 @@
+/system		ext4	/dev/block/bootdevice/by-name/system		flags=display="System";backup=1;wipeingui
+/custpack  	ext4	/dev/block/bootdevice/by-name/custpack		flags=display="Custpack";backup=1;wipeingui
+/data		ext4	/dev/block/bootdevice/by-name/userdata 	  	flags=display="Data";backup=1;wipeingui;wipeduringfactoryreset
+/cache		ext4	/dev/block/bootdevice/by-name/cache         flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
+/persist	ext4	/dev/block/bootdevice/by-name/persist		flags=display="Persist";backup=1
+/firmware	vfat	/dev/block/bootdevice/by-name/modem			flags=display="Modem";backup=1
+/boot		emmc	/dev/block/bootdevice/by-name/boot			flags=display="Boot";backup=1
+/recovery	emmc	/dev/block/bootdevice/by-name/recovery		flags=display="Recovery";backup=1
+/sdcard     vfat    /dev/block/mmcblk1p1 						flags=display="sdcard";storage;wipeingui;removable
+#/emmc       vfat    /dev/block/mmcblk0p32    					flags=display="Internal SDcard";storage;wipeingui;backup=0
+#/usbdisk	   vfat		 /dev/block/sda1	/dev/block/sda	flags=display="usbdisk";storage;removable
